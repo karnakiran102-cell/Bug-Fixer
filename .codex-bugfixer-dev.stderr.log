@@ -1,0 +1,262 @@
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/_not-found/page' in C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/_not-found/page' in 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/_not-found/page (expected C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found\page.js)
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\handle-externals.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ ⨯ ./src/components/dashboard/Terminal.tsx
+Error: 
+  [31mx[0m the name `handleResize` is defined multiple times
+    ,-[[36;1;4mC:\Users\karna\OneDrive\Desktop\Bug Fixer\src\components\dashboard\Terminal.tsx[0m:41:1]
+ [2m41[0m |     setShowReadyOverlay(true);
+ [2m42[0m |     const overlayTimer = window.setTimeout(() => setShowReadyOverlay(false), 1800);
+ [2m43[0m | 
+ [2m44[0m |     const handleResize = () => fitAddon.fit();
+    : [31;1m          ^^^^^^|^^^^^[0m
+    :                 [31;1m`-- [31;1mprevious definition of `handleResize` here[0m[0m
+ [2m45[0m |     window.addEventListener("resize", handleResize);
+ [2m46[0m | 
+ [2m47[0m |     return () => {
+ [2m48[0m |       window.removeEventListener("resize", handleResize);
+ [2m49[0m |       if (overlayTimer) window.clearTimeout(overlayTimer);
+ [2m50[0m |       term.dispose();
+ [2m51[0m |     };
+ [2m52[0m | 
+ [2m53[0m |     term.onKey(({ key, domEvent }) => {
+ [2m54[0m |       const ev = domEvent;
+ [2m55[0m |       const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+ [2m56[0m | 
+ [2m57[0m |       if (ev.keyCode === 13) term.write("\r\n\x1b[1;32mroot@nexus-ai\x1b[0m:~/project$ ");
+ [2m58[0m |       else if (ev.keyCode === 8) term.write("\b \b");
+ [2m59[0m |       else if (printable) term.write(key);
+ [2m60[0m |     });
+ [2m61[0m | 
+ [2m62[0m |     const handleResize = () => fitAddon.fit();
+    : [33;1m          ^^^^^^|^^^^^[0m
+    :                 [33;1m`-- [33;1m`handleResize` redefined here[0m[0m
+ [2m63[0m |     window.addEventListener("resize", handleResize);
+ [2m64[0m | 
+ [2m64[0m |     return () => { window.removeEventListener("resize", handleResize); term.dispose(); };
+    `----
+
+Import trace for requested module:
+./src/components/dashboard/Terminal.tsx
+./app/dashboard/chat/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/_not-found/page' in C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/_not-found/page' in 'C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/_not-found/page (expected C:\Users\karna\OneDrive\Desktop\Bug Fixer\.next\server\app\_not-found\page.js)
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\karna\OneDrive\Desktop\Bug Fixer\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload

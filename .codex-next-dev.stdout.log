@@ -1,0 +1,33 @@
+
+> dev
+> next dev --hostname 127.0.0.1 --port 3001
+
+  ▲ Next.js 14.2.35
+  - Local:        http://127.0.0.1:3001
+  - Network:      http://127.0.0.1:3001
+
+ ✓ Starting...
+ ✓ Ready in 4.2s
+ ○ Compiling /login ...
+ ✓ Compiled /login in 11s (529 modules)
+ GET /login 200 in 11514ms
+ GET / 307 in 11535ms
+ GET / 307 in 843ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 10.2s (2329 modules)
+ GET /dashboard 307 in 10752ms
+ ✓ Compiled /login in 278ms (1169 modules)
+ GET /login?next=/dashboard 200 in 439ms
+ ✓ Compiled /api/auth/login in 442ms (1197 modules)
+ POST /api/auth/login 200 in 576ms
+ GET /dashboard 200 in 426ms
+ ○ Compiling /api/dashboard/metrics ...
+ ✓ Compiled /api/dashboard/metrics in 634ms (1199 modules)
+ GET /api/dashboard/metrics 502 in 790ms
+ GET /api/dashboard/metrics 502 in 54ms
+ ○ Compiling /dashboard/projects ...
+ ✓ Compiled /dashboard/projects in 930ms (2375 modules)
+ ○ Compiling /dashboard/chat ...
+ ✓ Compiled /dashboard/chat in 13.7s (3997 modules)
+ GET /api/dashboard/metrics 502 in 682ms
+ GET /api/dashboard/metrics 502 in 66ms
